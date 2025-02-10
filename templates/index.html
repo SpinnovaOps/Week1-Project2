@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>To-Do List App</h1>
+    <a href="{{ url_for('view_tasks') }}" class="btn">View Tasks</a>
+    <a href="{{ url_for('show_recent_added') }}" class="btn">Recent Added Task</a>
+    <a href="{{ url_for('show_recent_deleted') }}" class="btn">Recent Deleted Task</a>
+{% endblock %}
